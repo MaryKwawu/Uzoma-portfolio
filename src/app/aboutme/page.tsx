@@ -12,9 +12,9 @@ import React from "react";
 import { title } from "process";
 import { Description } from "@radix-ui/react-dialog";
 
-//about data
-const about = {
-	title: "Resume",
+//personal data
+const personal = {
+	title: "Personal details",
 	Description:
 		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod",
 	info: [
@@ -220,7 +220,7 @@ const AboutMe = () => {
 						<TabsTrigger value={"experience"}>Experience</TabsTrigger>
 						<TabsTrigger value={"education"}>Education</TabsTrigger>
 						<TabsTrigger value={"skills"}>Skills</TabsTrigger>
-						<TabsTrigger value={"resume"}>Resume</TabsTrigger>
+						<TabsTrigger value={"resume"}>Personal Details</TabsTrigger>
 					</TabsList>
 
 					{/* content */}
@@ -327,12 +327,12 @@ const AboutMe = () => {
 							value={"resume"}
 							className="w-full text-center xl:text-left">
 							<div className="flex flex-col gap-[30px]">
-								<h3 className="text-4xl font-bold">{about.title}</h3>
+								<h3 className="text-4xl font-bold">{personal.title}</h3>
 								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-									{about.Description}
+									{personal.Description}
 								</p>
 								<ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-									{about.info.map((item, index) => {
+									{personal.info.map((item, index) => {
 										return (
 											<div key={index}>
 												<li className="flex items-center justify-center xl:justify-start gap-4">
