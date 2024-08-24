@@ -20,7 +20,7 @@ import { Description } from "@radix-ui/react-dialog";
 const personal = {
 	title: "Personal details",
 	Description:
-		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod",
+		"With over 3 years of experience and expertise in Bash scripting, Docker, Kubernetes, Terraform, and more, to name a few, I am confident in my ability to deliver exceptional results on projects. My track record of enhancing efficiency and scalability ensures I consistently meet and exceed expectations.",
 	info: [
 		{
 			fieldName: "Name",
@@ -58,7 +58,7 @@ const experience = {
 	icons: "assets/experience/badge.png",
 	title: "My experience",
 	Description:
-		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo",
+		"As a Cloud DevOps Engineer, I enhance efficiency and scalability by optimizing development and operations. With expertise in infrastructure as code, monitoring, containers, and cloud computing, I ensure smooth transitions from development to production, driving system performance and reliability.",
 	items: [
 		{
 			company: "AIFI Inc",
@@ -106,9 +106,9 @@ const experience = {
 //education data
 const education = {
 	icon: "assets/resume/graduation-cap.png",
-	title: "My education",
+	title: "",
 	Description:
-		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo",
+		"I hold a BSc in Computer Engineering from the University of Ghana, where I gained a solid foundation in IT and computing. This education provided me with essential skills and knowledge in system design and optimization, shaping my career in Cloud DevOps and technology.",
 	items: [
 		{
 			Institution: "Amazon Web Services",
@@ -147,7 +147,7 @@ const education = {
 const skills = {
 	title: "My skills",
 	Description:
-		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo",
+		"With hands-on experience across leading companies and diverse projects, I’ve honed my skills in Bash scripting and a broad array of DevOps tools like Docker, Kubernetes, Terraform, Ansible, ArgoCD, Azure, AWS, Prometheus, Grafana, and OpenShift. My expertise in configuration management, infrastructure as code, monitoring and observability, container technologies, and cloud computing enables me to drive efficiency and scalability, transforming complex systems into streamlined, high-performance environments.",
 	skillList: [
 		{
 			icon: <FaDocker />,
@@ -303,7 +303,7 @@ const AboutMe = () => {
 							<div className="flex flex-col gap-[30px]">
 								<div className="flex flex-col gap-[30px] text-center xl:text-left">
 									<h3 className="text-4xl font-bold">{skills.title}</h3>
-									<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+									<p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">
 										{skills.Description}
 									</p>
 								</div>
@@ -337,7 +337,7 @@ const AboutMe = () => {
 							className="w-full text-center xl:text-left">
 							<div className="flex flex-col gap-[30px]">
 								<h3 className="text-4xl font-bold">{personal.title}</h3>
-								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+								<p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">
 									{personal.Description}
 								</p>
 								<ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">

@@ -15,7 +15,7 @@ export default function Home() {
 	const router = useRouter();
 	return (
 		<section className="min-h-[70vh] flex">
-			<div className="flex flex-col gap-0 items-start px-8 p-4">
+			<div className="flex flex-col gap-0 items-start px-1 xl:px-8">
 				<span className="text-white text-5xl leading-[0.7]">.</span>
 				<span className="text-white text-5xl leading-[0.7]">.</span>
 				<span className="text-white text-5xl leading-[0.7]">.</span>
@@ -26,13 +26,22 @@ export default function Home() {
 				<div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-20">
 					{/* text */}
 					<div className="text-center xl:text-left order-2 xl:order-none">
-						<span className="text-xl">DevOps Engineer</span>
-						<h1 className="h1 mb-6">
-							My name is <br />
+						<span className="text-4xl text-accent font-bold">
+							DevOps Engineer
+						</span>
+						<h1 className="h1 mb-6 ">
+							<span className="italic font-thin">
+								The Tech Enthusiast Who Enjoys the Journey
+							</span>{" "}
+							<br />
 							<span className="text-accent">Ozi Uzoma</span>
 						</h1>
-						<p className="max-w-[500px] mb-9 text-white/80">
-							Cloud DevOps Engineer with expertise in optimizing development and{" "}
+						<p className="max-w-[700px] mb-9 text-white/80">
+							Cloud DevOps Engineer focused on optimizing development &
+							operations for peak efficiency and scalability. Expert in
+							infrastructure as code, containerization, CI/CD, & cloud
+							computing, driving seamless transitions from development to
+							production with enhanced reliability & performance.{" "}
 						</p>
 						{/* buttons and socials */}
 
@@ -62,7 +71,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="flex flex-col items-end gap-0 mt-40 px-8">
+			<div className="flex flex-col items-end gap-0 mt-40 px-1 xl:px-8">
 				<span className="text-white text-5xl leading-[0.7]">.</span>
 				<span className="text-white text-5xl leading-[0.7]">.</span>
 				<span className="text-white text-5xl leading-[0.7]">.</span>

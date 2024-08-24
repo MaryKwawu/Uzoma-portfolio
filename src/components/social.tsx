@@ -6,19 +6,11 @@ import { link } from "fs";
 const socials = [
 	{
 		icon: <FaGithub />,
-		path: "",
+		path: "https://github.com/oziuzoma",
 	},
 	{
 		icon: <FaLinkedin />,
-		path: "",
-	},
-	{
-		icon: <FaTwitter />,
-		path: "",
-	},
-	{
-		icon: <FaMedium />,
-		path: "",
+		path: "https://www.linkedin.com/in/ozi-uzoma-679a94101/",
 	},
 ];
 
@@ -28,7 +20,7 @@ const Social = ({ containerStyles, iconsStyles }: any) => {
 			{socials.map((item, index) => {
 				return (
 					<div key={index}>
-						<Link href={"item.path"} className={iconsStyles}>
+						<Link href={item.path} className={iconsStyles}>
 							{item.icon}
 						</Link>
 					</div>

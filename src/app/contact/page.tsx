@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -33,6 +33,16 @@ const info = [
 import { easeInOut, motion } from "framer-motion";
 
 const Contact = () => {
+	const [firstName, setFirstname] = useState("");
+	const [lasttName, setLastname] = useState("");
+	const [email, setEmail] = useState("");
+	const [phone, setPhone] = useState("");
+	const [service, setService] = useState("");
+	const [message, setMessage] = useState("");
+
+	function sendMessage() {
+		window.location.href = `mailto:${email}`;
+	}
 	return (
 		<motion.section
 			initial={{ opacity: 0 }}
@@ -47,20 +57,50 @@ const Contact = () => {
 					<div className="xl:w-[54%] order-2 xl:order-none">
 						<form
 							action=""
-							className="flex flex-col gap-6 p-10 bg-[#7c7ce3] rounded-xl">
+							className="flex flex-col gap-6 p-10 bg-[#7c7ce3] rounded-xl"
+							onSubmit={sendMessage}>
 							<h3 className="text-4xl text-accent">
 								Like my services? Come let us work together
 							</h3>
 							<p className="text-white/60">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Explicabo dolores harum sint{" "}
+								I’m ready to deliver exceptional results whenever called upon.
+								If you like what you see and want to explore how I can bring
+								value to your projects, hit the “Send Message” button to get in
+								touch. Let’s make your vision a reality!{" "}
 							</p>
 							{/* input */}
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-								<Input type="firstname" placeholder="Firstname" />
-								<Input type="lastname" placeholder="Lastname" />
-								<Input type="email" placeholder="Email address" />
-								<Input type="phone" placeholder="Phone number" />
+								<Input
+									type="firstname"
+									required
+									placeholder="Firstname"
+									onChange={(e) => {
+										setFirstname(e.target.value);
+									}}
+								/>
+								<Input
+									type="lastname"
+									placeholder="Lastname"
+									onChange={(e) => {
+										setLastname(e.target.value);
+									}}
+								/>
+								<Input
+									type="email"
+									required
+									placeholder="Email address"
+									onChange={(e) => {
+										setEmail(e.target.value);
+									}}
+								/>
+								<Input
+									type="tel"
+									required
+									placeholder="Phone number"
+									onChange={(e) => {
+										setPhone(e.target.value);
+									}}
+								/>
 							</div>
 							{/* select */}
 							<Select>
@@ -70,9 +110,19 @@ const Contact = () => {
 								<SelectContent>
 									<SelectGroup>
 										<SelectLabel>Select a service</SelectLabel>
-										<SelectItem value="est">Deployment Engineer</SelectItem>
-										<SelectItem value="cst">Deployment Engineer</SelectItem>
-										<SelectItem value="mst">Deployment Engineer</SelectItem>
+										<SelectItem value="est">Infrastructure-as-Code</SelectItem>
+										<SelectItem value="cst">
+											Continuous Integration & Deployment
+										</SelectItem>
+										<SelectItem value="mst">
+											Containers, Microservices & Orchestration
+										</SelectItem>
+										<SelectItem value="mst">
+											Observability & Monitoring
+										</SelectItem>
+										<SelectItem value="cst">
+											Configuration Management
+										</SelectItem>
 									</SelectGroup>
 								</SelectContent>
 							</Select>

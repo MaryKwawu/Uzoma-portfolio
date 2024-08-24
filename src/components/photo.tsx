@@ -35,7 +35,7 @@ const Photo = () => {
 						height={200}
 						// fill
 						alt={""}
-						className=" w-[400px]"
+						className=" w-[600px]"
 					/>
 				</motion.div>
 			</motion.div>
