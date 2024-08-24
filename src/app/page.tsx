@@ -32,8 +32,7 @@ export default function Home() {
 							<span className="text-accent">Ozi Uzoma</span>
 						</h1>
 						<p className="max-w-[500px] mb-9 text-white/80">
-							I am a professional DevOps Engineer with more than 5 years of
-							experience{" "}
+							Cloud DevOps Engineer with expertise in optimizing development and{" "}
 						</p>
 						{/* buttons and socials */}
 

@@ -22,17 +22,13 @@ import WorkSliderBtns from "@/components/work-slider-btn";
 const projects = [
 	{
 		num: "01",
-		category: "Deployment Engineer",
+		category: "Mobalysis, Online Analytics Application",
 		title: "project 3",
-		description:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam doloremque",
 		stack: [
 			{
-				name: "Kubernetes",
+				name: "Terraform",
 			},
-			{
-				name: "Docker",
-			},
+
 			{
 				name: "Ansible",
 			},
@@ -43,19 +39,18 @@ const projects = [
 	},
 	{
 		num: "02",
-		category: "DevOP Officer",
+		category: "Aston Villa HolteBar",
 		title: "project 4",
-		description:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam doloremque",
+
 		stack: [
 			{
-				name: "Ansible",
+				name: "ArgoCd",
 			},
 			{
 				name: "Terraform",
 			},
 			{
-				name: "ArgoCD",
+				name: "Kustomize",
 			},
 		],
 		image: "/assets/work/project-image-2.jpg",
@@ -64,19 +59,17 @@ const projects = [
 	},
 	{
 		num: "03",
-		category: "DevOP Instructor",
+		category: "Configuration of Continuous Delivery Pipeline",
 		title: "project 2",
-		description:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam doloremque",
 		stack: [
 			{
-				name: "Docker",
+				name: "CircleCI",
 			},
 			{
-				name: "Aws",
+				name: " AWS CloudFormation",
 			},
 			{
-				name: "Azure",
+				name: "Ansible",
 			},
 		],
 		image: "/assets/work/project-image-3.jpg",
@@ -85,19 +78,14 @@ const projects = [
 	},
 	{
 		num: "04",
-		category: "DevOP Engineer",
+		category: "Operationalizing a Microservice API",
 		title: "project 2",
-		description:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam doloremque",
 		stack: [
 			{
-				name: "ArgoCd",
+				name: "Docker",
 			},
 			{
 				name: "Kubernetes",
-			},
-			{
-				name: "Terraform",
 			},
 		],
 		image: "/assets/work/project-image-4.jpg",
@@ -139,7 +127,7 @@ const Projects = () => {
 								{project.category} projects
 							</h2>
 							{/*project.description*/}
-							<p className="text-white/60">{project.description}</p>
+							{/* <p className="text-white/60">{project.de}</p> */}
 							{/* stack */}
 							<ul className="flex gap-4">
 								{project.stack.map((item, index) => {

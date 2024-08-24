@@ -21,11 +21,11 @@ const Photo = () => {
 					}}
 					className=" mix-blend-normal">
 					<Image
-						src="/assets/head-shot.png"
+						src="/assets/uzoma-head-shot.png"
 						style={{
 							backgroundImage: "url('/assets/flower.png')",
 
-							backgroundSize: "540px",
+							backgroundSize: "530px",
 							backgroundRepeat: "no-repeat",
 							backgroundPosition: "top",
 						}}
@@ -35,7 +35,7 @@ const Photo = () => {
 						height={200}
 						// fill
 						alt={""}
-						className=" w-[600px]"
+						className=" w-[400px]"
 					/>
 				</motion.div>
 			</motion.div>

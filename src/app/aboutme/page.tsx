@@ -6,7 +6,11 @@ import {
 	SiTerraform,
 	SiArgo,
 	SiGit,
-	SiFlask,
+	SiPrometheus,
+	SiRedhatopenshift,
+	SiHelm,
+	SiGrafana,
+	SiCircleci,
 } from "react-icons/si";
 import React from "react";
 import { title } from "process";
@@ -24,11 +28,11 @@ const personal = {
 		},
 		{
 			fieldName: "Phone",
-			fieldValue: "(+233) 555 555 5555",
+			fieldValue: "(+233) 24 273 6007",
 		},
 		{
 			fieldName: "Experience",
-			fieldValue: "5+ Years",
+			fieldValue: "2+ Years",
 		},
 		{
 			fieldName: "Nationality",
@@ -36,7 +40,7 @@ const personal = {
 		},
 		{
 			fieldName: "Email",
-			fieldValue: "Ozi@gmail.com",
+			fieldValue: "oziuzoma@gmail.com",
 		},
 		{
 			fieldName: "Freelance",
@@ -57,28 +61,17 @@ const experience = {
 		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo",
 	items: [
 		{
-			company: "AmaliTech",
-			position: "DevOps Engineer",
-			duration: "Feb 2024 - Present",
-		},
-		{
-			company: "TiaCloud",
-			position: "DevOps Engineer",
-			duration: "Jun 2022 - Feb 2024",
-		},
-		{
-			company: "Aifi",
+			company: "AIFI Inc",
 			position: "Deployment Engineer",
-			duration: "Jun 2022 - Present",
+			duration: "July 2022 - Date",
 		},
-
 		{
-			company: "Azubi Africa",
+			company: "Azubi",
 			position: "AWS Cloud Engineer",
-			duration: "Sep 2021 - Oct 2022",
+			duration: "Sep 2021 - Oct 2021",
 		},
 		{
-			company: "Aimchess",
+			company: "Upkey/Aimchess",
 			position: "Analytics Intern",
 			duration: "Jan 2021 - Sep 2022",
 		},
@@ -185,8 +178,24 @@ const skills = {
 			name: "git",
 		},
 		{
-			icon: <SiFlask />,
-			name: "flask",
+			icon: <SiRedhatopenshift />,
+			name: "openshift",
+		},
+		{
+			icon: <SiPrometheus />,
+			name: "prometheus",
+		},
+		{
+			icon: <SiHelm />,
+			name: "helm",
+		},
+		{
+			icon: <SiGrafana />,
+			name: "grafana",
+		},
+		{
+			icon: <SiCircleci />,
+			name: "circleci",
 		},
 	],
 };

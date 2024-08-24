@@ -11,10 +11,10 @@ import MobileNav from "./mobilenav";
 
 const Header = () => {
 	const handleDownload = () => {
-		const cvUrl = "";
+		const cvUrl = "/OziUzoma_CV.pdf";
 		const link = document.createElement("a");
 		link.href = cvUrl;
-		link.download = "";
+		link.download = "OziUzoma_CV.pdf";
 		document.body.appendChild(link);
 		link.click();
 		document.body.removeChild(link);

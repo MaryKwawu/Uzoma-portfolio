@@ -7,28 +7,28 @@ import Link from "next/link";
 const services = [
 	{
 		num: "01",
-		title: "DevOps Engineering",
+		title: "Infrastructure-as-Code",
 		description:
 			"  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta saepe ",
 		href: "",
 	},
 	{
 		num: "02",
-		title: "Cyber Security",
+		title: "Containers, Microservices, and Orchestration",
 		description:
 			"  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta saepe ",
 		href: "",
 	},
 	{
 		num: "03",
-		title: "web Development",
+		title: "Continuous Integration & Deployment",
 		description:
 			"  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta saepe ",
 		href: "",
 	},
 	{
 		num: "04",
-		title: "web Development",
+		title: "Observability and Monitoring",
 		description:
 			"  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta saepe ",
 		href: "",
