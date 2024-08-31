@@ -15,7 +15,7 @@ const stats = [
 	},
 	{
 		num: 20,
-		text: "Technologies mastered",
+		text: "DevOps Tools mastered",
 	},
 
 	{
